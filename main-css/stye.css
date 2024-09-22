@@ -1,0 +1,565 @@
+@media only screen and (min-width:1200px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .dropdown-color a{
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .btn-color{
+        border-color: #05afec!important;
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+        padding-top: 15px!important;
+        padding-bottom: 15px!important;
+    }
+    .btn-color:hover{
+        background-color: #152644;
+        color: white!important;
+        border-color: #152644!important;
+    }
+    .padding-image{
+        height: 800px;
+        object-fit: contain;
+    }
+    .b-grad{
+        opacity: 0.3;
+    }
+    .service{
+        padding: 50px;
+    }
+    .service-1{
+        background: linear-gradient(rgba(66, 64, 64, 0.7) ,rgba(66, 64, 64, 0.7)) ,url(../images/people10.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 27%;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+    }
+    .service-2{
+        background: linear-gradient(rgba(66, 64, 64, 0.7) ,rgba(66, 64, 64, 0.7)) ,url(../images/people21.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 27%;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .service-3{
+        background: linear-gradient(rgba(66, 64, 64, 0.7) ,rgba(66, 64, 64, 0.7)) ,url(../images/people32.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 27%;
+        border-radius: 10px;
+        position: relative;
+    }
+    .icon-1{
+        width: 80px;
+        height: 80px;
+        background-color: #ffffff;
+        box-shadow: 6px 5px 16px 0px rgba(0,0,0,0.15);
+        border-radius: 100%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 35px;
+        z-index: 15;
+        transition: 0.4s;
+    }
+    .icons{
+        font-size: 37px;
+        width: 40px;
+        height: 40px;
+        color: #05afec;
+    }
+    .info-text h3{
+        font-family: 'Amiri',serif;
+        line-height: 1.4;
+        font-size: 30px!important;
+    }
+    .arrow{
+        display: block;
+        position: absolute;
+        border-radius: 0;
+        cursor: pointer;
+        background: #bdbdbd;
+        width: 50px;
+        transition: 0.4s;
+        height: 30px;
+        border: 14px solid rgba(255,255,255,0);
+        border-left: unset;
+        border-right: unset;
+        background-clip: padding-box;
+        opacity: 1;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease-out;
+        background-color: white;
+    }
+    .service-1:hover .overlay{
+        opacity: 1;
+    }
+    .service-2:hover .overlay{
+        opacity: 1;
+    }
+    .service-3:hover .overlay{
+        opacity: 1;
+    }
+    .service-2:hover .heading-hover{
+        display: none;
+    }
+    .text {
+        color: black;
+        font-size: 15px;
+        position: absolute;
+        top: 88%;
+        left: 7%;
+        opacity: 0;
+    }
+    .service-1:hover .hover-text{
+        transition: 0.3s;
+        transform: translateY(-60px);
+        opacity: 1;
+    }
+    .service-2:hover .hover-text{
+        transition: 0.3s;
+        transform: translateY(-60px);
+        opacity: 1;
+    }
+    .service-3:hover .hover-text{
+        transition: 0.3s;
+        transform: translateY(-60px);
+        opacity: 1;
+    }
+     .hover-class{
+        color: white;
+    }
+    .hover-class-1{
+        color: black;
+        margin-top: 80px;
+    }
+    .main-focus{
+        width: 100%;
+        box-shadow: 6px 5px 30px 0px rgba(0,0,0,0.12);
+        border-radius: 10px;
+    }
+    .focus-text{
+        width: 50%;
+        padding: 100px 60px 6px;
+    }
+    .image-focus-graph{
+        width: 50%;
+        padding: 100px 60px 6px;
+    }
+    .focus-text h4{
+        color: #989898;
+        font-size: 15px;
+    }
+    .focus-text h3{
+        font-family: 'Amiri',serif;
+        font-size: 45px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+    .focus{
+        font-family: 'Nunito Sans',sans-serif;
+        font-size: 17px;
+        line-height: 1.8;
+        color: #989898;
+    }
+    .block{
+        background-color: #f5f5f5;
+        border-radius: 0px 10px 10px 0px;
+        padding: 30px 35px;
+        position: relative;
+    }
+    .block::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: #05afec;
+    }
+    .block::after{
+        content: ",,";
+        font-size: 210px;
+        line-height: 0;
+        position: absolute;
+        z-index: 2;
+        top: -58px;
+        right: 7px;
+        color: #ffffff;
+        letter-spacing: -20px;
+    }
+    .first-main{
+        background-color: #05afec;
+        width: 100%;
+        margin-top: 90px;
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+    .button-get{
+        background-color: white!important;
+        width: 185px;
+        height: 70px;
+        color: black!important;
+    }
+    .button-get:hover{
+        border-color: #ffffff!important;
+        background-color: transparent!important;
+        color: #ffffff;
+    }
+    .progress-main{
+        width: 100%;
+    }
+    .progress-two{
+        width: 50%;
+        margin-top: 220px;
+        margin-left: 50px;
+    }
+    .progress-two h4{
+        color: #989898;
+        font-size: 15px;
+    }
+    .progress-two h3{
+        font-family: 'Amiri',serif;
+        font-size: 45px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+    .margin-main span{
+        margin-left: 420px;
+    }
+    .main-progress{
+        border-bottom: 1px solid #d8d8d8
+    }
+    .bar-color{
+        background-color: #05afec!important;
+    }
+    .card-head{
+        font-family: 'Amiri',serif;
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .card-main{
+        background-color: #14212B;
+        border-radius: 10px;
+        padding: 70px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .years-text{
+        font-size: 50px;
+        color: #05afec;
+    }
+    .years-p{
+        font-family: 'Nunito Sans',sans-serif!important;
+        font-size: 20px;
+        line-height: 1.9;
+    }
+    .news-head{
+        font-family: 'Amiri',serif;
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+    .card-flex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card-border{
+        padding: 15px;
+        border-radius: 10px!important;
+        transition: 0.3s;
+    }
+    .card-border:hover{
+        box-shadow: 3px 2px 18px 0px rgba(0,0,0,0.1);
+        border: none;
+    }
+    .card-details-1{
+        color: #989898;
+    }
+    .radius{
+        border-radius: 10px;
+        position: relative;
+    }
+    .card-details-2{
+        font-family: 'Amiri',serif;
+        font-size: 25px;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+    .card-details-2 a{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: 0.4s;
+    }
+    .card-details-2 a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    .date{
+        display: inline-block;
+        position: absolute;
+        width: 60px;
+        background-color: #05afec;
+        padding: 10px 15px 8px 15px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 6px 5px 16px 0px rgba(0,0,0,0.15);
+        transform: translateY(-50%);
+        right: 40px;
+        top: 280px;
+    }
+    .date h5{
+        font-size: 25px;
+    }
+    .card-details-3{
+        color: #05afec;
+    }
+    .card-details-23{
+        font-family: 'Amiri',serif;
+        font-size: 28px;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+    .card-details-23 a{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: 0.4s;
+    }
+    .card-details-23 a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    .gray{
+        object-fit: contain;
+        transition: 0.3s;
+        filter: grayscale(1);
+        width: 16.66666666666667%;
+        padding: 40px 50px;
+    }
+    .brand{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 12px;
+    }
+    .partners{
+        font-family: 'Amiri',serif;
+        font-size: 45px;
+        line-height: 1.1;
+        font-weight: 700;
+    }
+    .gray:hover{
+        filter: grayscale(0);
+        box-shadow: 11px 10px 38px 0px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .footer-main{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #152644;
+    }
+    .footer-main-1{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-main-2{
+        width: 45%;
+    }
+    .main{
+        width: 100%;
+        display: flex;
+    }
+    .address i{
+        font-size: 25px;
+        color: #05afec;
+    }
+    .link-one a{
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+    .link-one a h6{
+        font-family: 'Nunito Sans',sans-serif;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .link-one a:hover{
+        color: #fcfcfc;
+    }
+    .link-two a{
+        color: #cccccc;
+        text-decoration: none;
+    }
+    .link-two a h6{
+        font-family: 'Nunito Sans',sans-serif;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .link-two a:hover{
+        color: #cccccc;
+    }
+    .map-class{
+        filter: grayscale(2);
+    }
+    .hover-l{
+        position: relative;
+        transition: 0.2s ease-in-out;
+    }
+    .hover-l::before{
+        background: #05afec;
+        left: 0;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 0;
+        transition: 0s;
+    }
+    .hover-l::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        background: #05afec;
+        transition: width 0.4s;
+        right: 0;
+        width: 0;
+    }
+    .hover-l:hover::before{
+        width: 100%;
+        transition: width 0.4s;
+    }
+    .hover-l:hover::after{
+        width: 100%;
+        transition: 0s;
+    }
+    .fa-facebook{
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgba(255,255,255,0.1);
+        transition-property: all,transform;
+        transition-duration: 0.5s;
+        opacity: 1;
+        font-size: 14px!important;
+    }
+    .fa-facebook:hover{
+        background-color: #05afec;
+    }
+    .fa-twitter{
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgba(255,255,255,0.1);
+        transition-property: all,transform;
+        transition-duration: 0.5s;
+        opacity: 1;
+        font-size: 14px!important;
+    }
+    .fa-twitter:hover{
+        background-color: #3b5998;
+    }
+    .fa-linkedin{
+        width: 32px;
+        height: 32px;;
+        background-color: transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgba(255,255,255,0.1);
+        transition-property: all,transform;
+        transition-duration: 0.5s;
+        opacity: 1;
+        font-size: 14px!important;
+    }
+    .fa-linkedin:hover{
+        background-color: #e40000;
+    }
+    .fa-instagram{
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgba(255,255,255,0.1);
+        transition-property: all,transform;
+        transition-duration: 0.5s;
+        opacity: 1;
+        font-size: 14px!important;
+    }
+    .fa-instagram:hover{
+        background-color: #c32aa3;
+    }
+    .last{
+        background-color: #081219;
+        padding-top: 30px;
+        width: 100%;
+    }
+    .last-one{
+        width: 50%;
+    }
+    .last-two{
+        width: 50%;
+    }
+    .last-two p{
+        color: #8A9298;
+    }
+    .last-two p a{
+        color: white;
+    }
+    .service-1:hover .icon-1{
+        background-color: #05afec;
+    }
+    .service-1:hover .icons{
+        color: white!important;
+    }
+    .service-2:hover .icon-1{
+        background-color: #05afec;
+    }
+    .service-2:hover .icons{
+        color: white!important;
+    }
+    .service-3:hover .icon-1{
+        background-color: #05afec;
+    }
+    .service-3:hover .icons{
+        color: white!important;
+    }
+}
